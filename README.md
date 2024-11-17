@@ -6,6 +6,8 @@ Workshops covered by the Kettering University ACM Chapters
 | -------- | :----: | :--: | ----------- |
 | Git&GitHub | kozi8540 | Spring 23 | Presentations on how to use Git and GitHub for projects
 | Backend | kozi8540 | Fall 23 | Implementation of a local backend using Spring Boot, MySQL, and Postman
+| Frontend | kozi8540 | Spring 24 | Frontend implementation for backend workshop
+| Multi Agent | kozi8540 | Fall 24 | CrewAI and LangGraph multi agent workflows using ChatGPT
 
 ## Workshop Authors
 | Username | Name | Email |
