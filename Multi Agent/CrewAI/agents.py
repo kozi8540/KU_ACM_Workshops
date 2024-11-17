@@ -1,6 +1,7 @@
 from crewai import Agent
 
 class Agents:
+    # Agent for generating website features
     def features_agent(self):
         return Agent(
             role='Website Planner',
@@ -9,6 +10,7 @@ class Agents:
             verbose=True	#For logging
         )
 
+    # Agent for naming the input website
     def naming_agent(self):
         return Agent(
             role='Website Namer',
@@ -17,6 +19,7 @@ class Agents:
             verbose=True	#For logging
         )
     
+    # Agent for generating the website code
     def developer_agent(self):
         return Agent(
             role='Website Developer',

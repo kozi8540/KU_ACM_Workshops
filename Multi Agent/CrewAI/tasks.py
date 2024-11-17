@@ -1,6 +1,7 @@
 from crewai import Task
 
 class Tasks:
+    # Generate features for input website
     def features_task(self, agent, website):
         return Task(
             description= 'Generate a list of features the given website will need. Website: ' + website,
@@ -9,6 +10,7 @@ class Tasks:
             agent=agent
         )
 
+    # Generate name for input website
     def name_task(self, agent, website):
         return Task(
             description= 'Generate a name for the given website. Make it unique and catchy. Website: ' + website,
@@ -17,6 +19,7 @@ class Tasks:
             agent=agent
         )
     
+    # Generate code for the website
     def develop_task(self, agent, website):
         return Task(
             description= 'Generate a pretty Flask website with the derived name and features. Website: ' + website + '. Name: {name}. Features: {features}.',

@@ -23,10 +23,13 @@ my_agents = [features_agent, naming_agent, developer_agent]
 tasks = Tasks()
 my_tasks = [tasks.features_task(features_agent, website), tasks.name_task(naming_agent, website), tasks.develop_task(developer_agent, website)]
 
+# Make crew
 crew = Crew(
   agents=my_agents,
   tasks=my_tasks,
   	process=Process.sequential
 )
+
+# Run crew
 result = crew.kickoff()
 print(result)
